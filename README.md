@@ -1,6 +1,6 @@
 # diegodiasp.com
 
-My personal portfolio. It's a plain static site (HTML + CSS, no build step, no JavaScript).
+My personal portfolio. It's a plain static site (HTML + CSS + ~20 lines of JS, no build step, no dependencies).
 
 ## How it ships
 
@@ -24,7 +24,9 @@ python -m http.server 8080
 ```
 index.html            # single-page portfolio
 404.html              # custom not-found page
-assets/style.css      # styles (dark/light via prefers-color-scheme)
+assets/style.css      # "engineering field notes" styles
+assets/main.js        # mobile menu + active nav highlight
+assets/fonts/         # self-hosted Fraunces, Inter, IBM Plex Mono (woff2)
 assets/favicon.svg
 .github/workflows/    # CI/CD
 .htmlvalidate.json    # HTML lint rules

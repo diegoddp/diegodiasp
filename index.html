@@ -3,24 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Diego Pereira | Deployment Engineer · Kubernetes · Applied AI</title>
-  <meta name="description" content="Deployment Engineer with 7+ years delivering enterprise software into production. Kubernetes (EKS/AKS), CI/CD, Terraform, and LLM applications in Python (RAG, evals, guardrails).">
+  <title>Diego Dias Pereira | Deployment Engineer · WebOps · Cloud</title>
+  <meta name="description" content="Deployment Engineer in Ireland. I deploy, secure and scale web platforms from code to production: Azure, Kubernetes, CI/CD, Terraform and enterprise WordPress.">
   <link rel="canonical" href="https://diegodiasp.com/">
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://diegodiasp.com/">
-  <meta property="og:title" content="Diego Pereira | Deployment Engineer · Kubernetes · Applied AI">
-  <meta property="og:description" content="7+ years shipping enterprise software into production. Kubernetes, CI/CD, Terraform, and applied AI in Python.">
+  <meta property="og:title" content="Diego Dias Pereira | Deployment Engineer">
+  <meta property="og:description" content="I make complex web platforms reliable. Azure, Kubernetes, CI/CD, Terraform and enterprise WordPress.">
   <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#101722">
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/fraunces-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/ibm-plex-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/main.js" defer></script>
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "Diego D. Pereira",
+    "name": "Diego Dias Pereira",
     "jobTitle": "Deployment Engineer",
     "address": { "@type": "PostalAddress", "addressLocality": "Limerick", "addressCountry": "IE" },
     "url": "https://diegodiasp.com/",
@@ -31,202 +35,390 @@
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <header class="nav">
-    <div class="container nav-inner">
-      <a class="brand" href="#top">diego<span>.</span>pereira</a>
+  <!-- ============ SIDEBAR ============ -->
+  <header class="sidebar">
+    <div class="sidebar-top">
+      <a class="logo" href="#home" aria-label="Diego Dias Pereira, home">DP<span aria-hidden="true">/</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Menu</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+      </button>
+    </div>
+
+    <div class="sidebar-body" id="site-nav">
+      <div class="identity">
+        <p class="name">Diego Dias Pereira</p>
+        <p class="mono">Deployment Engineer<br>WebOps · Cloud · Kubernetes</p>
+      </div>
+
       <nav aria-label="Main">
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+        <ul>
+          <li><a href="#home" class="active">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>Home</a></li>
+          <li><a href="#work">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5zM3 13l9 5 9-5"/></svg>Selected work</a></li>
+          <li><a href="#lab">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 1.7 3h10.6a2 2 0 0 0 1.7-3l-5-9V3"/></svg>Engineering lab</a></li>
+          <li><a href="#experience">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="1"/><path d="M8 7V4h8v3M3 12h18"/></svg>Experience</a></li>
+          <li><a href="#contact">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 6l9 7 9-7"/></svg>Contact</a></li>
+        </ul>
       </nav>
+
+      <div class="sidebar-foot">
+        <p class="status"><span class="dot" aria-hidden="true"></span>Open to Ireland-based<br>&amp; remote roles</p>
+        <p class="social">
+          <a href="https://github.com/diegoddp" target="_blank" rel="noopener">GitHub ↗</a>
+          <!-- TODO: add LinkedIn once the URL is confirmed -->
+        </p>
+      </div>
     </div>
   </header>
 
   <main id="main">
-    <!-- HERO -->
-    <section id="top" class="hero container">
-      <p class="eyebrow">Limerick, Ireland · Irish citizen</p>
-      <h1>Diego Pereira</h1>
-      <p class="role">Deployment Engineer · Kubernetes · CI/CD · Applied AI</p>
-      <p class="lead">
-        I've spent 7+ years getting enterprise software into production and keeping it there.
-        Most recently that has meant regulated life-sciences customers.
-        I own releases from planning to go-live and hypercare, I'm hands-on with Kubernetes, cloud and CI/CD,
-        and I build LLM applications in Python.
-      </p>
-      <div class="cta">
-        <a class="btn primary" href="https://github.com/diegoddp" target="_blank" rel="noopener">GitHub</a>
-        <!-- TODO: uncomment once the LinkedIn URL and the CV PDF are in place
-        <a class="btn" href="https://www.linkedin.com/in/YOUR-PROFILE" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn" href="assets/Diego_Pereira_CV.pdf" download>Download CV</a>
-        -->
-        <a class="btn" href="#contact">Get in touch</a>
+    <!-- ============ TOP STRIP ============ -->
+    <div class="strip">
+      <span>Engineering field notes <b>///</b></span>
+      <span class="strip-tags">Deployment · Cloud · Kubernetes · Automation</span>
+    </div>
+
+    <!-- ============ HERO ============ -->
+    <section id="home" class="hero">
+      <div class="hero-copy">
+        <p class="label">Deployment Engineer / WebOps / Cloud</p>
+        <h1>I make complex web platforms <span class="squiggle">reliable.</span></h1>
+        <p class="hero-sub">
+          Deploying, securing and scaling web experiences from code to production,
+          with a focus on stability, performance and maintainability.
+        </p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#work">See selected work</a>
+          <a class="btn" href="https://github.com/diegoddp" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1.5-4-2-6-2.5m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1-.3-3.4 1.3a11.6 11.6 0 0 0-6 0C6.8 2.3 5.8 2.6 5.8 2.6a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4.4 9c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+            GitHub</a>
+          <!-- TODO: uncomment when ready
+          <a class="btn" href="assets/Diego_Pereira_CV.pdf" download>Download CV</a>
+          <a class="btn" href="https://www.linkedin.com/in/YOUR-PROFILE" target="_blank" rel="noopener">LinkedIn</a>
+          -->
+          <a class="btn" href="#contact">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 6l9 7 9-7"/></svg>
+            Contact</a>
+        </div>
       </div>
 
-      <ul class="stats">
-        <li><strong>7+</strong><span>years in production delivery</span></li>
-        <li><strong>50+</strong><span>enterprise platforms operated on Azure</span></li>
-        <li><strong>€150K</strong><span>yearly savings from WAF / bot mitigation</span></li>
-        <li><strong>50%</strong><span>CI/CD pipeline efficiency gain</span></li>
-      </ul>
+      <figure class="hero-diagram">
+        <svg viewBox="0 0 660 300" role="img" aria-labelledby="diag-title diag-desc">
+          <title id="diag-title">Deployment flow</title>
+          <desc id="diag-desc">Code in GitHub goes through CI/CD (Azure DevOps or GitHub Actions) and is deployed to Azure App Service, with infrastructure provisioned by Terraform. The deployment serves WordPress sites, web applications and Azure MySQL databases.</desc>
+
+          <!-- connections -->
+          <g class="wire">
+            <path class="flow" d="M100 106H140"/>
+            <path class="flow" d="M260 106H300"/>
+            <path class="flow" d="M430 106H460V38H490M460 106V122H490M460 106V206H490"/>
+          </g>
+          <g class="wire wire-iac">
+            <path class="flow dashed" d="M240 200V152"/>
+            <path class="flow dashed" d="M380 228H400V152"/>
+          </g>
+
+          <!-- Code -->
+          <g class="node" transform="translate(0 60)">
+            <rect width="100" height="92" rx="4"/>
+            <path class="ico" d="M38 22l-8 8 8 8M62 22l8 8-8 8M54 18l-8 24"/>
+            <text x="50" y="62" class="t">Code</text>
+            <text x="50" y="76" class="s">GitHub</text>
+          </g>
+          <!-- CI/CD -->
+          <g class="node" transform="translate(140 60)">
+            <rect width="120" height="92" rx="4"/>
+            <circle class="ico" cx="60" cy="28" r="10"/>
+            <circle class="ico" cx="60" cy="28" r="3.5"/>
+            <text x="60" y="56" class="t">CI/CD</text>
+            <text x="60" y="71" class="s">Azure DevOps ·</text>
+            <text x="60" y="83" class="s">GitHub Actions</text>
+          </g>
+          <!-- Deploy -->
+          <g class="node node-hot" transform="translate(300 60)">
+            <rect width="130" height="92" rx="4"/>
+            <path class="ico" d="M65 14l14 8v16l-14 8-14-8V22zM51 22l14 8 14-8M65 30v16"/>
+            <text x="65" y="62" class="t">Deploy</text>
+            <text x="65" y="76" class="s">Azure App Service</text>
+            <g class="badge" transform="translate(130 0)">
+              <circle r="11"/><path d="M-5 0l3.5 3.5L5-3.5"/>
+            </g>
+          </g>
+          <!-- Terraform -->
+          <g class="node" transform="translate(180 200)">
+            <rect width="200" height="56" rx="4"/>
+            <path class="ico tf" d="M18 16l8 4.6v9.2l-8-4.6zM28 21.2l8-4.6v9.2l-8 4.6zM28 32l8 4.6v-9.2"/>
+            <text x="112" y="25" class="t">Infrastructure as Code</text>
+            <text x="112" y="40" class="s">Terraform</text>
+          </g>
+          <!-- Targets -->
+          <g class="node target" transform="translate(490 10)">
+            <rect width="170" height="56" rx="4"/>
+            <circle class="ico" cx="24" cy="28" r="11"/>
+            <text x="44" y="25" class="t l">WordPress</text>
+            <text x="44" y="40" class="s l">50+ sites · Azure</text>
+            <circle class="ok" cx="152" cy="28" r="5"/>
+          </g>
+          <g class="node target" transform="translate(490 94)">
+            <rect width="170" height="56" rx="4"/>
+            <path class="ico" d="M14 22l10-5 10 5-10 5zM14 28l10 5 10-5M14 34l10 5 10-5"/>
+            <text x="44" y="25" class="t l">Applications</text>
+            <text x="44" y="40" class="s l">AEM · web apps</text>
+            <circle class="ok" cx="152" cy="28" r="5"/>
+          </g>
+          <g class="node target" transform="translate(490 178)">
+            <rect width="170" height="56" rx="4"/>
+            <ellipse class="ico" cx="24" cy="19" rx="10" ry="4"/>
+            <path class="ico" d="M14 19v18c0 2.2 4.5 4 10 4s10-1.8 10-4V19M14 28c0 2.2 4.5 4 10 4s10-1.8 10-4"/>
+            <text x="44" y="25" class="t l">Databases</text>
+            <text x="44" y="40" class="s l">Azure MySQL</text>
+            <circle class="ok" cx="152" cy="28" r="5"/>
+          </g>
+        </svg>
+        <figcaption class="mono">Fig. 01: the deployment path I build and operate</figcaption>
+      </figure>
     </section>
 
-    <!-- EXPERIENCE -->
-    <section id="experience" class="container">
-      <h2>Experience</h2>
-
-      <article class="job">
-        <header>
-          <h3>Deployment Engineer <span>· Kneat Solutions</span></h3>
-          <time>2025 – Present</time>
-        </header>
-        <ul>
-          <li>I own end-to-end deployment plans for upgrades and releases of the Kneat Gx enterprise application, which serves regulated life-sciences customers across DEV, VAL and PROD.</li>
-          <li>I coordinate milestones with SRE, Cloud, DBA and customer stakeholders, from planning through go-live and post-go-live hypercare.</li>
-          <li>Releases, security patches and environment changes all go through change management and quality gates.</li>
-          <li>When production alerts fire after a release, I trace the root cause across Kubernetes (EKS/AKS) workloads and restore service quickly.</li>
-        </ul>
-        <p class="tags">EKS · AKS · Grafana · Prometheus · Elasticsearch · Change management</p>
+    <!-- ============ CAPABILITIES ============ -->
+    <section class="capabilities" aria-label="Engineering capabilities">
+      <article>
+        <span class="num">01</span>
+        <h2>Cloud Infrastructure</h2>
+        <p>Azure, AWS, App Service, Kubernetes (EKS/AKS), Front Door, networking</p>
       </article>
-
-      <article class="job">
-        <header>
-          <h3>Cloud &amp; Web Administrator <span>· Kerry Group</span></h3>
-          <time>2022 – 2025</time>
-        </header>
-        <ul>
-          <li>I owned delivery and operations for 50+ enterprise platforms (AEM and WordPress) across multiple Azure regions.</li>
-          <li>I led the migration of Kerry Group's main site from Sitecore to Adobe AEM on Azure.</li>
-          <li>After spotting anomalous bot traffic, I rolled out Azure Front Door and WAF policies that took yearly requests from 36M to 20M and <strong>saved €150K/year</strong>.</li>
-          <li>I led a CI/CD transformation with Azure DevOps and GitHub Actions (<strong>+50% pipeline efficiency</strong>) and drove adoption of Infrastructure as Code with Terraform.</li>
-        </ul>
-        <p class="tags">Azure · Front Door / WAF · Terraform · Azure DevOps · GitHub Actions · AEM</p>
+      <article>
+        <span class="num">02</span>
+        <h2>CI/CD &amp; Automation</h2>
+        <p>Azure DevOps, GitHub Actions, Terraform, DEV → VAL → PROD promotion</p>
       </article>
-
-      <article class="job">
-        <header>
-          <h3>WordPress Technical Support <span>· WP Engine</span></h3>
-          <time>2019 – 2022</time>
-        </header>
-        <ul>
-          <li>I supported enterprise customers directly, diagnosing production issues across the DNS, TLS, CDN and server layers.</li>
-          <li>I guided customers through migrations, optimisation and onboarding, and built trusted technical relationships along the way.</li>
-        </ul>
-        <p class="tags">Linux · DNS · TLS · CDN · Customer-facing</p>
+      <article>
+        <span class="num">03</span>
+        <h2>WordPress at Scale</h2>
+        <p>Multi-site enterprise operations, updates, migrations, performance</p>
+      </article>
+      <article>
+        <span class="num">04</span>
+        <h2>Security &amp; Reliability</h2>
+        <p>WAF, hardening, pentest remediation, monitoring, backups, incident response</p>
       </article>
     </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="container">
-      <h2>Projects</h2>
+    <!-- ============ SELECTED WORK ============ -->
+    <section id="work" class="section">
+      <header class="section-head">
+        <p class="kicker">Selected engineering work</p>
+        <h2 class="title">Real projects. <span class="squiggle">Practical impact.</span></h2>
+      </header>
 
-      <h3 class="group">Applied AI</h3>
-      <div class="grid">
-        <article class="card">
-          <h4><a href="https://github.com/diegoddp/rag-docs-assistant" target="_blank" rel="noopener">rag-docs-assistant</a></h4>
-          <p>A FastAPI service that answers questions over Markdown docs with RAG and cites its sources. Retrieval uses chunking and a funnel (top-8 → score threshold → dedup → top-3) with category filtering.</p>
-          <p>Input guardrails block prompt injection and mask PII. Confidence-based routing sends medium-confidence answers to a <strong>human review queue</strong>. Retrieval and answer quality are measured with golden sets, a rubric and an LLM judge.</p>
-          <p class="tags">FastAPI · Chroma · OpenAI · Evals · Docker · pytest</p>
+      <div class="cases">
+        <!-- 01 -->
+        <article class="case accent-blue">
+          <div class="case-head">
+            <span class="num">01</span>
+            <span class="cat">Kerry Group · WebOps</span>
+          </div>
+          <h3>Multi-site WordPress operations</h3>
+          <svg class="case-art" viewBox="0 0 220 120" aria-hidden="true">
+            <rect class="win" x="80" y="6" width="60" height="38" rx="3"/>
+            <path class="bar" d="M80 14h60"/>
+            <circle class="wp" cx="110" cy="30" r="8"/>
+            <path class="line" d="M110 44v16M30 60h160M30 60v14M110 60v14M190 60v14"/>
+            <rect class="win" x="6" y="74" width="48" height="34" rx="3"/><circle class="wp" cx="30" cy="94" r="6"/>
+            <rect class="win" x="86" y="74" width="48" height="34" rx="3"/><circle class="wp" cx="110" cy="94" r="6"/>
+            <rect class="win" x="166" y="74" width="48" height="34" rx="3"/><circle class="wp" cx="190" cy="94" r="6"/>
+          </svg>
+          <dl class="case-body">
+            <dt>Challenge</dt>
+            <dd>50+ enterprise platforms (AEM and WordPress) spread across multiple Azure regions, each needing updates, security and releases.</dd>
+            <dt>Approach</dt>
+            <dd>I owned delivery and operations: security hardening, pentest remediation, server updates and migrations. I led the main-site move from Sitecore to Adobe AEM on Azure, and put Azure Front Door + WAF in front of anomalous bot traffic.</dd>
+            <dt>Result</dt>
+            <dd class="result">Bot traffic cut from 36M to 20M requests/year, <strong>saving €150K/year</strong>.</dd>
+          </dl>
+          <ul class="chips"><li>WordPress</li><li>AEM</li><li>Azure Front Door</li><li>WAF</li></ul>
         </article>
 
-        <article class="card">
-          <h4><a href="https://github.com/diegoddp/llm-ticket-analyzer" target="_blank" rel="noopener">llm-ticket-analyzer</a></h4>
-          <p>An API that sends support tickets to an LLM and returns structured output (category, urgency, summary), validated with Pydantic. A mock mode keeps development and tests free of API cost.</p>
-          <p class="tags">FastAPI · Pydantic · OpenAI · Docker</p>
+        <!-- 02 -->
+        <article class="case accent-lime">
+          <div class="case-head">
+            <span class="num">02</span>
+            <span class="cat">CI/CD · Infrastructure as Code</span>
+          </div>
+          <h3>Repeatable cloud deployments</h3>
+          <svg class="case-art" viewBox="0 0 220 120" aria-hidden="true">
+            <circle class="blob" cx="110" cy="60" r="44"/>
+            <path class="cycle" d="M88 22a44 44 0 0 1 60 14M154 78a44 44 0 0 1-44 26M72 88a44 44 0 0 1-4-40"/>
+            <g class="tag-node"><rect x="90" y="4" width="40" height="22" rx="11"/><text x="110" y="19">AZ</text></g>
+            <g class="tag-node"><rect x="150" y="70" width="40" height="22" rx="11"/><text x="170" y="85">GH</text></g>
+            <g class="tag-node tf"><rect x="30" y="70" width="40" height="22" rx="11"/><text x="50" y="85">TF</text></g>
+            <path class="line" d="M98 56l12-6 12 6-12 6zM98 64l12 6 12-6"/>
+          </svg>
+          <dl class="case-body">
+            <dt>Challenge</dt>
+            <dd>Classic, click-configured pipelines and hand-built environments made releases slow and hard to reproduce.</dd>
+            <dt>Approach</dt>
+            <dd>YAML pipelines (build → UAT → Production) with pre-release checks for PII, disallowed plugins and stray SQL dumps. Terraform provisions App Service with slots, MySQL, Application Insights and Storage. Secrets stay in pipeline variable groups.</dd>
+            <dt>Result</dt>
+            <dd class="result"><strong>+50% pipeline efficiency</strong> from the CI/CD transformation, and IaC adopted with Terraform.</dd>
+          </dl>
+          <ul class="chips"><li>Azure DevOps</li><li>GitHub Actions</li><li>Terraform</li></ul>
+          <p class="case-links">
+            <a href="https://github.com/diegoddp/terraform-azure-pipeline" target="_blank" rel="noopener">terraform-azure-pipeline ↗</a>
+            <a href="https://github.com/diegoddp/wordpress-deployment-pipeline" target="_blank" rel="noopener">wordpress-deployment-pipeline ↗</a>
+          </p>
+        </article>
+
+        <!-- 03 -->
+        <article class="case accent-blue">
+          <div class="case-head">
+            <span class="num">03</span>
+            <span class="cat">Independent products</span>
+          </div>
+          <h3>Products built end-to-end</h3>
+          <p class="case-intro">From idea to production: web products built around real needs.</p>
+          <ul class="products">
+            <li>
+              <p class="p-name">AquiTemBR</p>
+              <p>Classifieds platform for Brazilians living in Europe.</p>
+              <p class="p-stack">WordPress · PHP · Classima</p>
+            </li>
+            <li>
+              <p class="p-name"><a href="https://mycreche.ie" target="_blank" rel="noopener">MyCreche Ireland ↗</a></p>
+              <p>MVP that helps parents find childcare availability and helps crèches manage vacancies.</p>
+              <p class="p-stack">Next.js · Supabase</p>
+            </li>
+            <li>
+              <p class="p-name"><a href="https://myfamilyfinances.vercel.app" target="_blank" rel="noopener">MyFamilyFinances ↗</a></p>
+              <p>Family finance manager for budgeting, expenses and investments.</p>
+              <p class="p-stack">Next.js · Prisma · Vercel</p>
+            </li>
+          </ul>
         </article>
       </div>
+    </section>
 
-      <h3 class="group">Platform, CI/CD &amp; Infrastructure</h3>
-      <div class="grid">
-        <article class="card">
-          <h4><a href="https://github.com/diegoddp/terraform-azure-pipeline" target="_blank" rel="noopener">terraform-azure-pipeline</a></h4>
-          <p>An Azure DevOps pipeline that builds and applies Terraform for an Azure stack: App Service with slots, MySQL, Application Insights and Storage. Secrets live in pipeline variables.</p>
-          <p class="tags">Terraform · Azure · Azure DevOps</p>
-        </article>
+    <!-- ============ LAB ============ -->
+    <section id="lab" class="section">
+      <header class="section-head">
+        <p class="kicker">Engineering lab · open source</p>
+        <h2 class="title">Python, applied AI &amp; automation</h2>
+        <p class="section-sub">Smaller builds on GitHub. Each one is documented and tested, and most run in Docker.</p>
+      </header>
 
-        <article class="card">
-          <h4><a href="https://github.com/diegoddp/wordpress-deployment-pipeline" target="_blank" rel="noopener">wordpress-deployment-pipeline</a></h4>
-          <p>A YAML pipeline (migrated from classic) that runs build → UAT → Production. Before a release it checks for PII, disallowed plugins and stray SQL dumps.</p>
-          <p class="tags">Azure DevOps · YAML · PowerShell</p>
-        </article>
+      <ol class="lab">
+        <li>
+          <span class="num">L1</span>
+          <div>
+            <h3><a href="https://github.com/diegoddp/rag-docs-assistant" target="_blank" rel="noopener">rag-docs-assistant ↗</a></h3>
+            <p>A RAG API over Markdown docs. Chunking and a retrieval funnel find the passages; guardrails block prompt injection and mask PII; medium-confidence answers go to a human review queue; quality is measured with golden sets and an LLM judge.</p>
+          </div>
+          <p class="stack">FastAPI · Chroma · OpenAI · Docker</p>
+        </li>
+        <li>
+          <span class="num">L2</span>
+          <div>
+            <h3><a href="https://github.com/diegoddp/llm-ticket-analyzer" target="_blank" rel="noopener">llm-ticket-analyzer ↗</a></h3>
+            <p>Support-ticket triage with LLM structured output (category, urgency, summary), validated by Pydantic. A mock mode keeps tests free of API cost.</p>
+          </div>
+          <p class="stack">FastAPI · Pydantic · OpenAI</p>
+        </li>
+        <li>
+          <span class="num">L3</span>
+          <div>
+            <h3><a href="https://github.com/diegoddp/Production-Backup-Workflow-Azure" target="_blank" rel="noopener">Production-Backup-Workflow-Azure ↗</a></h3>
+            <p>A GitHub Actions workflow triggers an Azure DevOps pipeline that backs up App Service content (Kudu API) and MySQL. No credentials are stored in code.</p>
+          </div>
+          <p class="stack">GitHub Actions · Azure DevOps · MySQL</p>
+        </li>
+        <li>
+          <span class="num">L4</span>
+          <div>
+            <h3><a href="https://github.com/diegoddp/secure-code-analysis-pipeline" target="_blank" rel="noopener">secure-code-analysis-pipeline ↗</a></h3>
+            <p>Daily scheduled dependency scanning and CodeQL analysis for Java and JavaScript, with results published as SARIF.</p>
+          </div>
+          <p class="stack">CodeQL · Maven · npm</p>
+        </li>
+        <li>
+          <span class="num">L5</span>
+          <div>
+            <h3><a href="https://github.com/diegoddp/fastapi-tasks-api" target="_blank" rel="noopener">fastapi-tasks-api ↗</a></h3>
+            <p>A containerized REST API with full CRUD, Pydantic validation and OpenAPI docs.</p>
+          </div>
+          <p class="stack">FastAPI · Docker</p>
+        </li>
+      </ol>
 
-        <article class="card">
-          <h4><a href="https://github.com/diegoddp/Production-Backup-Workflow-Azure" target="_blank" rel="noopener">Production-Backup-Workflow-Azure</a></h4>
-          <p>A GitHub Actions workflow triggers an Azure DevOps pipeline, which backs up App Service content via the Kudu API and dumps the MySQL database. It uses a service principal and no secrets are stored in code.</p>
-          <p class="tags">GitHub Actions · Azure DevOps · Kudu · MySQL</p>
-        </article>
+      <p class="now"><span class="label">Now building</span> Prometheus metrics for rag-docs-assistant, then a Prometheus + Grafana stack, followed by Helm and Argo CD.</p>
+    </section>
 
-        <article class="card">
-          <h4><a href="https://github.com/diegoddp/secure-code-analysis-pipeline" target="_blank" rel="noopener">secure-code-analysis-pipeline</a></h4>
-          <p>A scheduled daily pipeline that scans dependencies and runs CodeQL analysis on Java and JavaScript code, then publishes SARIF results.</p>
-          <p class="tags">CodeQL · Maven · npm · SARIF</p>
-        </article>
-      </div>
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="section">
+      <header class="section-head">
+        <p class="kicker">Experience timeline</p>
+        <h2 class="title">7+ years in production</h2>
+      </header>
 
-      <h3 class="group">Python &amp; Backend</h3>
-      <div class="grid">
-        <article class="card">
-          <h4><a href="https://github.com/diegoddp/fastapi-tasks-api" target="_blank" rel="noopener">fastapi-tasks-api</a></h4>
-          <p>A containerized REST API with full CRUD, Pydantic validation and interactive OpenAPI docs.</p>
-          <p class="tags">FastAPI · Pydantic · Docker</p>
-        </article>
+      <div class="exp">
+        <ol class="timeline">
+          <li class="current">
+            <p class="when">Sep 2025 – Present</p>
+            <h3>Kneat Solutions</h3>
+            <p class="role">Deployment Engineer</p>
+            <ul>
+              <li>I own the release plans for an enterprise app used by regulated life-sciences customers, across DEV, VAL and PROD.</li>
+              <li>I coordinate the SRE, Cloud, DBA and customer teams from planning through go-live and hypercare.</li>
+              <li>After releases, I trace incidents across Kubernetes (EKS/AKS) workloads and restore service.</li>
+            </ul>
+          </li>
+          <li>
+            <p class="when">2022 – Sep 2025</p>
+            <h3>Kerry Group</h3>
+            <p class="role">Cloud &amp; Web Administrator · WebOps</p>
+            <ul>
+              <li>I ran 50+ enterprise AEM and WordPress platforms on Azure.</li>
+              <li>I led the Sitecore → AEM migration of the main site.</li>
+              <li>The WAF rollout saved €150K/year, and the CI/CD transformation gave +50% pipeline efficiency.</li>
+            </ul>
+          </li>
+          <li>
+            <p class="when">2019 – 2022</p>
+            <h3>WP Engine</h3>
+            <p class="role">WordPress Technical Support</p>
+            <ul>
+              <li>I diagnosed enterprise customers' production issues across DNS, TLS, CDN and server layers.</li>
+              <li>I guided customers through migrations, optimisation and onboarding.</li>
+            </ul>
+          </li>
+        </ol>
 
-        <article class="card">
-          <h4><a href="https://github.com/diegoddp/github-repo-reporter" target="_blank" rel="noopener">github-repo-reporter</a></h4>
-          <p>A script that pulls a user's repositories from the GitHub REST API, normalizes the data and saves a JSON report. Unit tested.</p>
-          <p class="tags">Python · requests · pytest</p>
-        </article>
-      </div>
-
-      <div class="now">
-        <strong>Currently building:</strong> observability for rag-docs-assistant: a Prometheus <code>/metrics</code> endpoint
-        (per-route counters, latency histograms, review-queue gauge) and next a Prometheus + Grafana stack, followed by Helm and Argo CD.
+        <ul class="facts">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Limerick, Ireland · Irish citizen</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="12" rx="1"/><path d="M2 20h20"/></svg>Remote or on-site</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/></svg>English · Portuguese · Italian (int.)</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6l8-3 8 3-8 3zM7 8v5c0 1.7 2.2 3 5 3s5-1.3 5-3V8"/></svg>PgDip Software Eng. · B.Sc. IT · AZ-900</li>
+        </ul>
       </div>
     </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="container">
-      <h2>Skills</h2>
-      <dl class="skills">
-        <div><dt>Cloud &amp; Infra</dt><dd>AWS, Azure, Kubernetes (EKS/AKS), Docker, Terraform, Azure Front Door / WAF</dd></div>
-        <div><dt>CI/CD</dt><dd>Azure DevOps, GitHub Actions, YAML pipelines, quality gates, DEV/VAL/PROD promotion</dd></div>
-        <div><dt>Observability</dt><dd>Prometheus, Grafana, Elasticsearch, New Relic, Azure Monitor</dd></div>
-        <div><dt>Applied AI</dt><dd>LLM APIs, structured output, embeddings, RAG, evals, LLM-as-judge, guardrails</dd></div>
-        <div><dt>Code</dt><dd>Python, FastAPI, Pydantic, pytest, PowerShell, Bash</dd></div>
-        <div><dt>Delivery</dt><dd>Release planning, change management, go-live, hypercare, customer-facing work with SRE, Cloud and DBA teams</dd></div>
-      </dl>
-
-      <p class="edu">
-        Postgraduate Diploma in Software Engineering &amp; Agile Methods (Universidade Cruzeiro do Sul, 2021) ·
-        B.Sc. Information Technology (FATEC São Paulo, 2014) · Azure Fundamentals (AZ-900) ·
-        English &amp; Portuguese (fluent), Italian (intermediate)
-      </p>
-    </section>
-
-    <!-- FREELANCE -->
-    <section id="freelance" class="container small">
-      <h2>Also: WordPress freelance</h2>
-      <p>I still build and host a handful of WordPress sites for small businesses:
-        <a href="https://mondarc.com.br" target="_blank" rel="noopener">mondarc.com.br</a> (services) and
-        <a href="https://seivaflora.com.br" target="_blank" rel="noopener">seivaflora.com.br</a> (WooCommerce with a custom checkout).
-      </p>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="container contact">
-      <h2>Let's talk</h2>
-      <p>I'm open to Deployment, Release and Forward Deployed Engineer roles in Ireland, the EU or remote.</p>
-      <div class="cta">
-        <a class="btn primary" href="mailto:diegodiasp@hotmail.com">diegodiasp@hotmail.com</a>
-        <a class="btn" href="https://github.com/diegoddp" target="_blank" rel="noopener">github.com/diegoddp</a>
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="contact">
+      <p class="kicker">Contact</p>
+      <h2>Have an interesting <span class="squiggle">engineering challenge?</span></h2>
+      <div class="actions">
+        <a class="btn btn-lime" href="mailto:diegodiasp@hotmail.com">diegodiasp@hotmail.com</a>
+        <a class="btn btn-ghost" href="https://github.com/diegoddp" target="_blank" rel="noopener">github.com/diegoddp ↗</a>
       </div>
     </section>
+
+    <footer class="footer mono">
+      <span>© 2026 Diego Dias Pereira</span>
+      <span>Static HTML/CSS · shipped by GitHub Actions · <a href="https://github.com/diegoddp/diegodiasp.com" target="_blank" rel="noopener">source ↗</a></span>
+    </footer>
   </main>
-
-  <footer class="container footer">
-    <p>© 2026 Diego Pereira · Static site, deployed with GitHub Actions ·
-      <a href="https://github.com/diegoddp/diegodiasp.com" target="_blank" rel="noopener">source</a></p>
-  </footer>
 </body>
 </html>
