@@ -212,6 +212,10 @@ main {
 .case-art .win { fill: #fff; stroke: var(--blue); stroke-width: 1.5; }
 .case-art .bar, .case-art .line { fill: none; stroke: var(--blue); stroke-width: 1.5; }
 .case-art .wp { fill: none; stroke: var(--blue); stroke-width: 2; }
+.case-art .req { stroke: var(--ink); stroke-dasharray: 3 5; animation: flow 1.4s linear infinite; }
+.case-art .dot-in { fill: var(--ink); }
+.case-art .shield { fill: rgba(198,245,0,.35); stroke: var(--blue); stroke-width: 2; stroke-linejoin: round; }
+.case-art .shield-q { font: 800 30px var(--serif); fill: var(--blue); text-anchor: middle; }
 .case-art .blob { fill: rgba(198,245,0,.28); }
 .case-art .cycle { fill: none; stroke: var(--ink); stroke-width: 1.5; stroke-dasharray: 4 4; }
 .case-art .tag-node rect { fill: #fff; stroke: var(--ink); stroke-width: 1.2; }

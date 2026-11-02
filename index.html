@@ -222,27 +222,32 @@
         <article class="case accent-blue">
           <div class="case-head">
             <span class="num">01</span>
-            <span class="cat">Kerry Group · WebOps</span>
+            <span class="cat">Kerry Group · Edge security</span>
           </div>
-          <h3>Multi-site WordPress operations</h3>
+          <h3>Stopping disguised bot traffic at the edge</h3>
           <svg class="case-art" viewBox="0 0 220 120" aria-hidden="true">
-            <rect class="win" x="80" y="6" width="60" height="38" rx="3"/>
-            <path class="bar" d="M80 14h60"/>
-            <circle class="wp" cx="110" cy="30" r="8"/>
-            <path class="line" d="M110 44v16M30 60h160M30 60v14M110 60v14M190 60v14"/>
-            <rect class="win" x="6" y="74" width="48" height="34" rx="3"/><circle class="wp" cx="30" cy="94" r="6"/>
-            <rect class="win" x="86" y="74" width="48" height="34" rx="3"/><circle class="wp" cx="110" cy="94" r="6"/>
-            <rect class="win" x="166" y="74" width="48" height="34" rx="3"/><circle class="wp" cx="190" cy="94" r="6"/>
+            <!-- incoming requests -->
+            <path class="line req" d="M4 22H70M4 42H70M4 62H70M4 82H70M4 102H70"/>
+            <circle class="dot-in" cx="14" cy="22" r="4"/><circle class="dot-in" cx="34" cy="42" r="4"/>
+            <circle class="dot-in" cx="20" cy="62" r="4"/><circle class="dot-in" cx="44" cy="82" r="4"/>
+            <circle class="dot-in" cx="10" cy="102" r="4"/>
+            <!-- WAF shield -->
+            <path class="shield" d="M110 10l30 10v28c0 22-14 36-30 44-16-8-30-22-30-44V20z"/>
+            <text class="shield-q" x="110" y="60">?</text>
+            <!-- passed traffic to origin -->
+            <path class="line" d="M140 62H176"/>
+            <rect class="win" x="176" y="40" width="40" height="44" rx="3"/>
+            <path class="bar" d="M176 50h40M184 62h24M184 72h16"/>
           </svg>
           <dl class="case-body">
             <dt>Challenge</dt>
-            <dd>50+ enterprise platforms (AEM and WordPress) spread across multiple Azure regions, each needing updates, security and releases.</dd>
+            <dd>A high-traffic domain was flooded by unknown bots that kept rotating their IP, user agent and location, so blocking by any single attribute didn't work.</dd>
             <dt>Approach</dt>
-            <dd>I owned delivery and operations: security hardening, pentest remediation, server updates and migrations. I led the main-site move from Sitecore to Adobe AEM on Azure, and put Azure Front Door + WAF in front of anomalous bot traffic.</dd>
+            <dd>I built bot-filter rules in Azure Front Door WAF. A rate-limiting rule catches repeated hits on the same URL, and suspicious requests get a bot challenge first. Anyone who passes gets through, and normal visitors are never challenged.</dd>
             <dt>Result</dt>
-            <dd class="result">Bot traffic cut from 36M to 20M requests/year, <strong>saving €150K/year</strong>.</dd>
+            <dd class="result">Requests cut from 36M to 20M per year, <strong>saving €150K/year</strong>.</dd>
           </dl>
-          <ul class="chips"><li>WordPress</li><li>AEM</li><li>Azure Front Door</li><li>WAF</li></ul>
+          <ul class="chips"><li>Azure Front Door</li><li>WAF</li><li>Rate limiting</li><li>Bot challenge</li></ul>
         </article>
 
         <!-- 02 -->
@@ -295,7 +300,7 @@
               <p class="p-stack">Next.js · Supabase</p>
             </li>
             <li>
-              <p class="p-name"><a href="https://myfamilyfinances.vercel.app" target="_blank" rel="noopener">MyFamilyFinances ↗</a></p>
+              <p class="p-name"><a href="https://stg-myfamilyfinance.vercel.app/" target="_blank" rel="noopener">MyFamilyFinances ↗</a></p>
               <p>Family finance manager for budgeting, expenses and investments.</p>
               <p class="p-stack">Next.js · Prisma · Vercel</p>
             </li>
