@@ -15,7 +15,7 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Validate HTML
         run: npx --yes html-validate@8 "*.html"
@@ -23,8 +23,10 @@ jobs:
       - name: Check links
         uses: lycheeverse/lychee-action@v2
         with:
-          args: --no-progress --exclude-mail --exclude linkedin.com --max-retries 3 "*.html"
+          args: --no-progress --exclude linkedin.com --max-retries 3 --root-dir ${{ github.workspace }} "*.html"
           fail: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   # avoids rate limits on github.com links
 
   deploy:
     needs: check
@@ -36,7 +38,7 @@ jobs:
       name: production
       url: https://diegodiasp.com
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Upload to Hostinger (FTP)
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
