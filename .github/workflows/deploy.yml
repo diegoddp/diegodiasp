@@ -28,22 +28,27 @@ jobs:
 
   deploy:
     needs: check
-    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    # Off until the repo variable HOSTINGER_DEPLOY is set to "true" (Settings → Secrets and variables → Actions → Variables)
+    if: vars.HOSTINGER_DEPLOY == 'true' && github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
     runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
+    concurrency: production
     environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      name: production
+      url: https://diegodiasp.com
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/configure-pages@v5
-
-      - uses: actions/upload-pages-artifact@v3
+      - name: Upload to Hostinger (FTP)
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          path: .
-
-      - id: deployment
-        uses: actions/deploy-pages@v4
+          server: ${{ secrets.HOSTINGER_FTP_SERVER }}
+          username: ${{ secrets.HOSTINGER_FTP_USERNAME }}
+          password: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
+          protocol: ftps
+          server-dir: ${{ vars.HOSTINGER_SERVER_DIR || 'public_html/' }}
+          exclude: |
+            **/.git*
+            **/.git*/**
+            .github/**
+            README.md
+            .htmlvalidate.json
