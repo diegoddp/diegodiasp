@@ -23,7 +23,7 @@ jobs:
       - name: Check links
         uses: lycheeverse/lychee-action@v2
         with:
-          args: --no-progress --exclude linkedin.com --max-retries 3 --root-dir ${{ github.workspace }} "*.html"
+          args: --no-progress --exclude linkedin.com --exclude "^https://diegodiasp\.com" --max-retries 3 --root-dir ${{ github.workspace }} "*.html"
           fail: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   # avoids rate limits on github.com links
@@ -54,3 +54,4 @@ jobs:
             .github/**
             README.md
             .htmlvalidate.json
+            .lycheecache

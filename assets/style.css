@@ -1,5 +1,4 @@
 /* ============ Fonts (self-hosted) ============ */
-@font-face { font-family: "Fraunces"; font-weight: 600; font-display: swap; src: url("fonts/fraunces-latin-600-normal.woff2") format("woff2"); }
 @font-face { font-family: "Fraunces"; font-weight: 800; font-display: swap; src: url("fonts/fraunces-latin-800-normal.woff2") format("woff2"); }
 @font-face { font-family: "Inter"; font-weight: 400; font-display: swap; src: url("fonts/inter-latin-400-normal.woff2") format("woff2"); }
 @font-face { font-family: "Inter"; font-weight: 600; font-display: swap; src: url("fonts/inter-latin-600-normal.woff2") format("woff2"); }
@@ -183,7 +182,7 @@ main {
 .capabilities article { padding: 24px 22px; }
 .capabilities article + article { border-left: 1px solid var(--rule); }
 .capabilities .num { font: 500 12px var(--mono); color: var(--blue); }
-.capabilities h2 { font: 600 18px/1.3 var(--sans); margin: 6px 0 6px; }
+.capabilities h3 { font: 600 18px/1.3 var(--sans); margin: 6px 0 6px; }
 .capabilities p { font-size: 14px; color: var(--ink-2); }
 
 /* ============ Sections ============ */
@@ -230,7 +229,8 @@ main {
 
 .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; }
 .chips li { font: 12px var(--mono); border: 1px solid var(--ink); border-radius: 3px; padding: 3px 8px; background: #fff; }
-.case-links { display: flex; flex-direction: column; gap: 4px; margin-top: 14px; font: 13px var(--mono); }
+.case-links { display: flex; flex-direction: column; gap: 6px; margin-top: 14px; font: 13px var(--mono); }
+.case-links a { display: inline-block; padding: 4px 0; min-height: 24px; }
 
 .case-intro { color: var(--ink-2); font-size: 14.5px; margin-bottom: 16px; }
 .products li { border: 1px solid var(--blue); border-radius: 4px; padding: 12px 14px; background: #fff; box-shadow: 4px 4px 0 rgba(20,85,232,.12); }
@@ -296,6 +296,10 @@ main {
   display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;
   padding: 26px 0 34px; font-size: 12.5px; color: var(--muted);
 }
+
+/* 404 page */
+.page-404 main { margin-left: 0; }
+.page-404 .hero { display: block; }
 
 /* ============ Responsive ============ */
 @media (max-width: 1280px) {

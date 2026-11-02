@@ -3,19 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Diego Dias Pereira | Deployment Engineer · WebOps · Cloud</title>
-  <meta name="description" content="Deployment Engineer in Ireland. I deploy, secure and scale web platforms from code to production: Azure, Kubernetes, CI/CD, Terraform and enterprise WordPress.">
+  <title>Diego Dias Pereira | Deployment Engineer in Ireland · Azure, Kubernetes, CI/CD</title>
+  <meta name="description" content="Diego Dias Pereira is a Deployment Engineer in Limerick, Ireland, with 7+ years shipping enterprise software to production across Azure, Kubernetes (EKS/AKS), CI/CD, Terraform and WordPress at scale.">
+  <meta name="author" content="Diego Dias Pereira">
+  <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://diegodiasp.com/">
 
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Diego Dias Pereira">
+  <meta property="og:locale" content="en_IE">
   <meta property="og:url" content="https://diegodiasp.com/">
   <meta property="og:title" content="Diego Dias Pereira | Deployment Engineer">
-  <meta property="og:description" content="I make complex web platforms reliable. Azure, Kubernetes, CI/CD, Terraform and enterprise WordPress.">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:description" content="I make complex web platforms reliable. 7+ years shipping enterprise software across Azure, Kubernetes, CI/CD and Terraform.">
+  <meta property="og:image" content="https://diegodiasp.com/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Diego Dias Pereira, Deployment Engineer: I make complex web platforms reliable.">
+  <meta property="profile:first_name" content="Diego">
+  <meta property="profile:last_name" content="Dias Pereira">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Diego Dias Pereira | Deployment Engineer">
+  <meta name="twitter:description" content="I make complex web platforms reliable. Azure, Kubernetes, CI/CD, Terraform.">
+  <meta name="twitter:image" content="https://diegodiasp.com/assets/og-image.png">
   <meta name="theme-color" content="#101722">
 
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
   <link rel="preload" href="assets/fonts/fraunces-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/ibm-plex-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/style.css">
   <script src="assets/main.js" defer></script>
@@ -23,12 +41,37 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Diego Dias Pereira",
-    "jobTitle": "Deployment Engineer",
-    "address": { "@type": "PostalAddress", "addressLocality": "Limerick", "addressCountry": "IE" },
-    "url": "https://diegodiasp.com/",
-    "sameAs": ["https://github.com/diegoddp"]
+    "@graph": [
+      {
+        "@type": "ProfilePage",
+        "@id": "https://diegodiasp.com/#page",
+        "url": "https://diegodiasp.com/",
+        "name": "Diego Dias Pereira | Deployment Engineer",
+        "inLanguage": "en",
+        "dateModified": "2026-11-02",
+        "mainEntity": { "@id": "https://diegodiasp.com/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://diegodiasp.com/#person",
+        "name": "Diego Dias Pereira",
+        "jobTitle": "Deployment Engineer",
+        "url": "https://diegodiasp.com/",
+        "email": "mailto:info@diegodiasp.com",
+        "image": "https://diegodiasp.com/assets/og-image.png",
+        "worksFor": { "@type": "Organization", "name": "Kneat Solutions" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Limerick", "addressCountry": "IE" },
+        "nationality": { "@type": "Country", "name": "Ireland" },
+        "alumniOf": [
+          { "@type": "CollegeOrUniversity", "name": "Universidade Cruzeiro do Sul" },
+          { "@type": "CollegeOrUniversity", "name": "FATEC São Paulo" }
+        ],
+        "hasCredential": { "@type": "EducationalOccupationalCredential", "name": "Microsoft Azure Fundamentals (AZ-900)" },
+        "knowsLanguage": ["en", "pt", "it"],
+        "knowsAbout": ["Deployment engineering", "Release management", "Microsoft Azure", "AWS", "Kubernetes", "Amazon EKS", "Azure Kubernetes Service", "CI/CD", "Azure DevOps", "GitHub Actions", "Terraform", "Infrastructure as Code", "WordPress", "Adobe Experience Manager", "Web Application Firewall", "Azure Front Door", "Prometheus", "Grafana", "Python", "FastAPI", "Retrieval-augmented generation"],
+        "sameAs": ["https://github.com/diegoddp"]
+      }
+    ]
   }
   </script>
 </head>
@@ -38,7 +81,7 @@
   <!-- ============ SIDEBAR ============ -->
   <header class="sidebar">
     <div class="sidebar-top">
-      <a class="logo" href="#home" aria-label="Diego Dias Pereira, home">DP<span aria-hidden="true">/</span></a>
+      <a class="logo" href="#home" aria-label="DP, Diego Dias Pereira, home">DP<span aria-hidden="true">/</span></a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
         <span class="sr-only">Menu</span>
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
@@ -187,25 +230,26 @@
     </section>
 
     <!-- ============ CAPABILITIES ============ -->
-    <section class="capabilities" aria-label="Engineering capabilities">
+    <section class="capabilities" aria-labelledby="cap-title">
+      <h2 id="cap-title" class="sr-only">Engineering capabilities</h2>
       <article>
         <span class="num">01</span>
-        <h2>Cloud Infrastructure</h2>
+        <h3>Cloud Infrastructure</h3>
         <p>Azure, AWS, App Service, Kubernetes (EKS/AKS), Front Door, networking</p>
       </article>
       <article>
         <span class="num">02</span>
-        <h2>CI/CD &amp; Automation</h2>
+        <h3>CI/CD &amp; Automation</h3>
         <p>Azure DevOps, GitHub Actions, Terraform, DEV → VAL → PROD promotion</p>
       </article>
       <article>
         <span class="num">03</span>
-        <h2>WordPress at Scale</h2>
+        <h3>WordPress at Scale</h3>
         <p>Multi-site enterprise operations, updates, migrations, performance</p>
       </article>
       <article>
         <span class="num">04</span>
-        <h2>Security &amp; Reliability</h2>
+        <h3>Security &amp; Reliability</h3>
         <p>WAF, hardening, pentest remediation, monitoring, backups, incident response</p>
       </article>
     </section>

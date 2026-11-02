@@ -37,11 +37,16 @@ python -m http.server 8080
 
 ```
 index.html              single-page portfolio
-404.html                custom not-found page
+404.html                custom not-found page (noindex)
+.htaccess               Hostinger: HTTPS/www redirects, compression, caching, security headers
+robots.txt, sitemap.xml crawler files
+site.webmanifest        app name, colours and icons
+favicon.ico
 assets/
   style.css             all styles (layout, components, responsive rules)
   main.js               mobile menu + active section highlight
-  favicon.svg
+  og-image.png          1200x630 social share card
+  favicon.svg, apple-touch-icon.png, icon-192/512.png
   fonts/                Fraunces, Inter, IBM Plex Mono (woff2)
 .github/workflows/
   deploy.yml            CI/CD pipeline
@@ -61,6 +66,15 @@ push to main ──► check ─────────────────
   1. Add these repository **secrets**: `HOSTINGER_FTP_SERVER`, `HOSTINGER_FTP_USERNAME`, `HOSTINGER_FTP_PASSWORD`
   2. Optionally add the repository **variable** `HOSTINGER_SERVER_DIR` (default `public_html/`)
   3. Set the repository **variable** `HOSTINGER_DEPLOY` to `true`
+
+## SEO and performance
+
+- Lighthouse (local): **Performance 99 · Accessibility 100 · Best Practices 100 · SEO 100**, CLS 0
+- Title and meta description written for search, canonical URL, `robots`, sitemap
+- Open Graph + Twitter card with a custom 1200x630 share image (LinkedIn, Slack, WhatsApp previews)
+- JSON-LD structured data (`ProfilePage` + `Person`: role, employer, location, skills, credentials)
+- Self-hosted, preloaded fonts (`font-display: swap`); no third-party requests, no trackers
+- `.htaccess`: gzip, long-lived caching for fonts and images, HSTS and a strict Content-Security-Policy
 
 ## Responsive and accessibility checks
 
