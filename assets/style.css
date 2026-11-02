@@ -275,6 +275,9 @@ main {
 .facts li { display: flex; gap: 12px; align-items: center; font-size: 14.5px; }
 .facts li + li { margin-top: 14px; }
 .facts svg { color: var(--blue); }
+.facts .edu-item { align-items: flex-start; }
+.facts .edu { display: flex; flex-direction: column; gap: 10px; line-height: 1.35; }
+.facts .edu > span + span { padding-top: 10px; border-top: 1px dashed var(--rule); }
 
 /* Contact */
 .contact {
