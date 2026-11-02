@@ -76,6 +76,10 @@ push to main ──► check ─────────────────
 - Self-hosted, preloaded fonts (`font-display: swap`); no third-party requests, no trackers
 - `.htaccess`: gzip, long-lived caching for fonts and images, HSTS and a strict Content-Security-Policy
 
+## Updating CSS/JS
+
+Browsers cache `style.css` and `main.js` for a week (see `.htaccess`). After changing either file, bump the `?v=` query string on their `<link>`/`<script>` tags in `index.html` (and the stylesheet in `404.html`), so visitors get the new version right away.
+
 ## Responsive and accessibility checks
 
 - Tested from 320 px phones to 2560 px monitors, including landscape phones and short laptop screens, with no horizontal overflow
