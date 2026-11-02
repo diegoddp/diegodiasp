@@ -1,4 +1,4 @@
-// Mobile menu toggle + active section highlight in the sidebar.
+// Mobile menu toggle, active section highlight in the sidebar, back-to-top button.
 const sidebar = document.querySelector(".sidebar");
 const toggle = document.querySelector(".menu-toggle");
 const links = [...document.querySelectorAll(".sidebar nav a")];
@@ -21,3 +21,15 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { rootMargin: "-45% 0px -50% 0px" });
 sections.forEach((s) => s && observer.observe(s));
+
+const toTop = document.querySelector(".to-top");
+toTop.hidden = false;
+let ticking = false;
+const updateToTop = () => {
+  toTop.classList.toggle("show", window.scrollY > window.innerHeight * 0.8);
+  ticking = false;
+};
+window.addEventListener("scroll", () => {
+  if (!ticking) { requestAnimationFrame(updateToTop); ticking = true; }
+}, { passive: true });
+updateToTop();
