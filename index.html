@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Diego Pereira | Deployment Engineer · Kubernetes · Applied AI</title>
+  <meta name="description" content="Deployment Engineer with 7+ years delivering enterprise software into production. Kubernetes (EKS/AKS), CI/CD, Terraform, and LLM applications in Python (RAG, evals, guardrails).">
+  <link rel="canonical" href="https://diegodiasp.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://diegodiasp.com/">
+  <meta property="og:title" content="Diego Pereira | Deployment Engineer · Kubernetes · Applied AI">
+  <meta property="og:description" content="7+ years shipping enterprise software into production. Kubernetes, CI/CD, Terraform, and applied AI in Python.">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Diego D. Pereira",
+    "jobTitle": "Deployment Engineer",
+    "address": { "@type": "PostalAddress", "addressLocality": "Limerick", "addressCountry": "IE" },
+    "url": "https://diegodiasp.com/",
+    "sameAs": ["https://github.com/diegoddp"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top">diego<span>.</span>pereira</a>
+      <nav aria-label="Main">
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section id="top" class="hero container">
+      <p class="eyebrow">Limerick, Ireland · Irish citizen</p>
+      <h1>Diego Pereira</h1>
+      <p class="role">Deployment Engineer · Kubernetes · CI/CD · Applied AI</p>
+      <p class="lead">
+        I've spent 7+ years getting enterprise software into production and keeping it there.
+        Most recently that has meant regulated life-sciences customers.
+        I own releases from planning to go-live and hypercare, I'm hands-on with Kubernetes, cloud and CI/CD,
+        and I build LLM applications in Python.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="https://github.com/diegoddp" target="_blank" rel="noopener">GitHub</a>
+        <!-- TODO: uncomment once the LinkedIn URL and the CV PDF are in place
+        <a class="btn" href="https://www.linkedin.com/in/YOUR-PROFILE" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="assets/Diego_Pereira_CV.pdf" download>Download CV</a>
+        -->
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+
+      <ul class="stats">
+        <li><strong>7+</strong><span>years in production delivery</span></li>
+        <li><strong>50+</strong><span>enterprise platforms operated on Azure</span></li>
+        <li><strong>€150K</strong><span>yearly savings from WAF / bot mitigation</span></li>
+        <li><strong>50%</strong><span>CI/CD pipeline efficiency gain</span></li>
+      </ul>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="container">
+      <h2>Experience</h2>
+
+      <article class="job">
+        <header>
+          <h3>Deployment Engineer <span>· Kneat Solutions</span></h3>
+          <time>2025 – Present</time>
+        </header>
+        <ul>
+          <li>I own end-to-end deployment plans for upgrades and releases of the Kneat Gx enterprise application, which serves regulated life-sciences customers across DEV, VAL and PROD.</li>
+          <li>I coordinate milestones with SRE, Cloud, DBA and customer stakeholders, from planning through go-live and post-go-live hypercare.</li>
+          <li>Releases, security patches and environment changes all go through change management and quality gates.</li>
+          <li>When production alerts fire after a release, I trace the root cause across Kubernetes (EKS/AKS) workloads and restore service quickly.</li>
+        </ul>
+        <p class="tags">EKS · AKS · Grafana · Prometheus · Elasticsearch · Change management</p>
+      </article>
+
+      <article class="job">
+        <header>
+          <h3>Cloud &amp; Web Administrator <span>· Kerry Group</span></h3>
+          <time>2022 – 2025</time>
+        </header>
+        <ul>
+          <li>I owned delivery and operations for 50+ enterprise platforms (AEM and WordPress) across multiple Azure regions.</li>
+          <li>I led the migration of Kerry Group's main site from Sitecore to Adobe AEM on Azure.</li>
+          <li>After spotting anomalous bot traffic, I rolled out Azure Front Door and WAF policies that took yearly requests from 36M to 20M and <strong>saved €150K/year</strong>.</li>
+          <li>I led a CI/CD transformation with Azure DevOps and GitHub Actions (<strong>+50% pipeline efficiency</strong>) and drove adoption of Infrastructure as Code with Terraform.</li>
+        </ul>
+        <p class="tags">Azure · Front Door / WAF · Terraform · Azure DevOps · GitHub Actions · AEM</p>
+      </article>
+
+      <article class="job">
+        <header>
+          <h3>WordPress Technical Support <span>· WP Engine</span></h3>
+          <time>2019 – 2022</time>
+        </header>
+        <ul>
+          <li>I supported enterprise customers directly, diagnosing production issues across the DNS, TLS, CDN and server layers.</li>
+          <li>I guided customers through migrations, optimisation and onboarding, and built trusted technical relationships along the way.</li>
+        </ul>
+        <p class="tags">Linux · DNS · TLS · CDN · Customer-facing</p>
+      </article>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="container">
+      <h2>Projects</h2>
+
+      <h3 class="group">Applied AI</h3>
+      <div class="grid">
+        <article class="card">
+          <h4><a href="https://github.com/diegoddp/rag-docs-assistant" target="_blank" rel="noopener">rag-docs-assistant</a></h4>
+          <p>A FastAPI service that answers questions over Markdown docs with RAG and cites its sources. Retrieval uses chunking and a funnel (top-8 → score threshold → dedup → top-3) with category filtering.</p>
+          <p>Input guardrails block prompt injection and mask PII. Confidence-based routing sends medium-confidence answers to a <strong>human review queue</strong>. Retrieval and answer quality are measured with golden sets, a rubric and an LLM judge.</p>
+          <p class="tags">FastAPI · Chroma · OpenAI · Evals · Docker · pytest</p>
+        </article>
+
+        <article class="card">
+          <h4><a href="https://github.com/diegoddp/llm-ticket-analyzer" target="_blank" rel="noopener">llm-ticket-analyzer</a></h4>
+          <p>An API that sends support tickets to an LLM and returns structured output (category, urgency, summary), validated with Pydantic. A mock mode keeps development and tests free of API cost.</p>
+          <p class="tags">FastAPI · Pydantic · OpenAI · Docker</p>
+        </article>
+      </div>
+
+      <h3 class="group">Platform, CI/CD &amp; Infrastructure</h3>
+      <div class="grid">
+        <article class="card">
+          <h4><a href="https://github.com/diegoddp/terraform-azure-pipeline" target="_blank" rel="noopener">terraform-azure-pipeline</a></h4>
+          <p>An Azure DevOps pipeline that builds and applies Terraform for an Azure stack: App Service with slots, MySQL, Application Insights and Storage. Secrets live in pipeline variables.</p>
+          <p class="tags">Terraform · Azure · Azure DevOps</p>
+        </article>
+
+        <article class="card">
+          <h4><a href="https://github.com/diegoddp/wordpress-deployment-pipeline" target="_blank" rel="noopener">wordpress-deployment-pipeline</a></h4>
+          <p>A YAML pipeline (migrated from classic) that runs build → UAT → Production. Before a release it checks for PII, disallowed plugins and stray SQL dumps.</p>
+          <p class="tags">Azure DevOps · YAML · PowerShell</p>
+        </article>
+
+        <article class="card">
+          <h4><a href="https://github.com/diegoddp/Production-Backup-Workflow-Azure" target="_blank" rel="noopener">Production-Backup-Workflow-Azure</a></h4>
+          <p>A GitHub Actions workflow triggers an Azure DevOps pipeline, which backs up App Service content via the Kudu API and dumps the MySQL database. It uses a service principal and no secrets are stored in code.</p>
+          <p class="tags">GitHub Actions · Azure DevOps · Kudu · MySQL</p>
+        </article>
+
+        <article class="card">
+          <h4><a href="https://github.com/diegoddp/secure-code-analysis-pipeline" target="_blank" rel="noopener">secure-code-analysis-pipeline</a></h4>
+          <p>A scheduled daily pipeline that scans dependencies and runs CodeQL analysis on Java and JavaScript code, then publishes SARIF results.</p>
+          <p class="tags">CodeQL · Maven · npm · SARIF</p>
+        </article>
+      </div>
+
+      <h3 class="group">Python &amp; Backend</h3>
+      <div class="grid">
+        <article class="card">
+          <h4><a href="https://github.com/diegoddp/fastapi-tasks-api" target="_blank" rel="noopener">fastapi-tasks-api</a></h4>
+          <p>A containerized REST API with full CRUD, Pydantic validation and interactive OpenAPI docs.</p>
+          <p class="tags">FastAPI · Pydantic · Docker</p>
+        </article>
+
+        <article class="card">
+          <h4><a href="https://github.com/diegoddp/github-repo-reporter" target="_blank" rel="noopener">github-repo-reporter</a></h4>
+          <p>A script that pulls a user's repositories from the GitHub REST API, normalizes the data and saves a JSON report. Unit tested.</p>
+          <p class="tags">Python · requests · pytest</p>
+        </article>
+      </div>
+
+      <div class="now">
+        <strong>Currently building:</strong> observability for rag-docs-assistant: a Prometheus <code>/metrics</code> endpoint
+        (per-route counters, latency histograms, review-queue gauge) and next a Prometheus + Grafana stack, followed by Helm and Argo CD.
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="container">
+      <h2>Skills</h2>
+      <dl class="skills">
+        <div><dt>Cloud &amp; Infra</dt><dd>AWS, Azure, Kubernetes (EKS/AKS), Docker, Terraform, Azure Front Door / WAF</dd></div>
+        <div><dt>CI/CD</dt><dd>Azure DevOps, GitHub Actions, YAML pipelines, quality gates, DEV/VAL/PROD promotion</dd></div>
+        <div><dt>Observability</dt><dd>Prometheus, Grafana, Elasticsearch, New Relic, Azure Monitor</dd></div>
+        <div><dt>Applied AI</dt><dd>LLM APIs, structured output, embeddings, RAG, evals, LLM-as-judge, guardrails</dd></div>
+        <div><dt>Code</dt><dd>Python, FastAPI, Pydantic, pytest, PowerShell, Bash</dd></div>
+        <div><dt>Delivery</dt><dd>Release planning, change management, go-live, hypercare, customer-facing work with SRE, Cloud and DBA teams</dd></div>
+      </dl>
+
+      <p class="edu">
+        Postgraduate Diploma in Software Engineering &amp; Agile Methods (Universidade Cruzeiro do Sul, 2021) ·
+        B.Sc. Information Technology (FATEC São Paulo, 2014) · Azure Fundamentals (AZ-900) ·
+        English &amp; Portuguese (fluent), Italian (intermediate)
+      </p>
+    </section>
+
+    <!-- FREELANCE -->
+    <section id="freelance" class="container small">
+      <h2>Also: WordPress freelance</h2>
+      <p>I still build and host a handful of WordPress sites for small businesses:
+        <a href="https://mondarc.com.br" target="_blank" rel="noopener">mondarc.com.br</a> (services) and
+        <a href="https://seivaflora.com.br" target="_blank" rel="noopener">seivaflora.com.br</a> (WooCommerce with a custom checkout).
+      </p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container contact">
+      <h2>Let's talk</h2>
+      <p>I'm open to Deployment, Release and Forward Deployed Engineer roles in Ireland, the EU or remote.</p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:diegodiasp@hotmail.com">diegodiasp@hotmail.com</a>
+        <a class="btn" href="https://github.com/diegoddp" target="_blank" rel="noopener">github.com/diegoddp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>© 2026 Diego Pereira · Static site, deployed with GitHub Actions ·
+      <a href="https://github.com/diegoddp/diegodiasp.com" target="_blank" rel="noopener">source</a></p>
+  </footer>
+</body>
+</html>
