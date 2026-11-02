@@ -108,6 +108,7 @@
       </div>
 
       <figure class="hero-diagram">
+        <div class="diagram-scroll">
         <svg viewBox="0 0 660 300" role="img" aria-labelledby="diag-title diag-desc">
           <title id="diag-title">Deployment flow</title>
           <desc id="diag-desc">Code in GitHub goes through CI/CD (Azure DevOps or GitHub Actions) and is deployed to Azure App Service, with infrastructure provisioned by Terraform. The deployment serves WordPress sites, web applications and Azure MySQL databases.</desc>
@@ -161,7 +162,7 @@
             <rect width="170" height="56" rx="4"/>
             <circle class="ico" cx="24" cy="28" r="11"/>
             <text x="44" y="25" class="t l">WordPress</text>
-            <text x="44" y="40" class="s l">50+ sites · Azure</text>
+            <text x="44" y="40" class="s l">50+ sites</text>
             <circle class="ok" cx="152" cy="28" r="5"/>
           </g>
           <g class="node target" transform="translate(490 94)">
@@ -180,7 +181,8 @@
             <circle class="ok" cx="152" cy="28" r="5"/>
           </g>
         </svg>
-        <figcaption class="mono">Fig. 01: the deployment path I build and operate</figcaption>
+        </div>
+        <figcaption class="mono">Fig. 01: the deployment path I build and operate<span class="swipe"> · swipe →</span></figcaption>
       </figure>
     </section>
 
