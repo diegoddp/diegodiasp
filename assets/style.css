@@ -235,8 +235,7 @@ main {
 .case-intro { color: var(--ink-2); font-size: 14.5px; margin-bottom: 16px; }
 .products li { border: 1px solid var(--blue); border-radius: 4px; padding: 12px 14px; background: #fff; box-shadow: 4px 4px 0 rgba(20,85,232,.12); }
 .products li + li { margin-top: 12px; }
-.products li:nth-child(2) { margin-left: 14px; }
-.products li:nth-child(3) { margin-left: 28px; }
+.products li:nth-child(even) { margin-left: 14px; }
 .products p { font-size: 14px; color: var(--ink-2); }
 .products .p-name { font: 600 15px var(--sans); color: var(--ink); margin-bottom: 2px; }
 .products .p-stack { font: 12px var(--mono); color: var(--blue); margin-top: 6px; }
